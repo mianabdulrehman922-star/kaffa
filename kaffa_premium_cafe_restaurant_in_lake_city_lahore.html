@@ -1,0 +1,2344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>KAFFA | Premium Cafe & Restaurant in Lake City Lahore</title>
+  <meta name="description" content="Experience premium food, handcrafted specialty coffee and luxury dining at KAFFA, C-43 Lake City Road, Lahore. Open daily 8:00 AM – 12:30 AM.">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KAFFA | Premium Cafe & Restaurant in Lake City Lahore">
+  <meta property="og:description" content="Good food, great coffee, and unforgettable moments at KAFFA, Lake City Lahore.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230d0f12'/><text x='50%' y='65%' font-family='serif' font-size='50' font-weight='bold' fill='%23d4af37' text-anchor='middle'>K</text></svg>">
+
+  <!-- Google Fonts: Cormorant Garamond for Headings & Plus Jakarta Sans for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Schema.org Restaurant Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "KAFFA",
+    "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200&auto=format&fit=crop",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C-43, 22 Lake City Road, Block M 3-A, Lake City",
+      "addressLocality": "Lahore",
+      "addressRegion": "Punjab",
+      "addressCountry": "PK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "31.3653",
+      "longitude": "74.2498"
+    },
+    "telephone": "+923111777505",
+    "servesCuisine": ["Cafe", "Coffee", "Continental", "Burgers", "Steaks", "Desserts"],
+    "priceRange": "$$",
+    "openingHours": "Mo-Su 08:00-00:30",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "320"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-dark: #0d0f12;
+      --bg-card: #161a20;
+      --bg-card-hover: #1f242d;
+      --bg-glass: rgba(13, 15, 18, 0.75);
+      --bg-cream: #f4f0eb;
+      --text-main: #f4f0eb;
+      --text-muted: #9d9ea3;
+      --text-dark: #121417;
+      --accent-gold: #d4af37;
+      --accent-gold-light: #e5c365;
+      --accent-gold-dark: #b89225;
+      --accent-gold-glow: rgba(212, 175, 55, 0.18);
+      --border-color: rgba(212, 175, 55, 0.2);
+      --border-light: rgba(255, 255, 255, 0.08);
+      
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      
+      --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      
+      --shadow-sm: 0 4px 12px rgba(0,0,0,0.3);
+      --shadow-md: 0 8px 28px rgba(0,0,0,0.45);
+      --shadow-glow: 0 0 25px rgba(212, 175, 55, 0.25);
+    }
+
+    /* CSS Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      color-scheme: dark;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition-fast);
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      color: inherit;
+      border: none;
+      outline: none;
+      background: none;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    /* Typography Utilities */
+    h1, h2, h3, h4, h5, .font-serif {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+
+    .section-subtitle {
+      color: var(--accent-gold);
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      color: var(--text-main);
+      margin-bottom: 1.25rem;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      font-weight: 300;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-dark);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2a2f38;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent-gold);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 0.95rem 2rem;
+      border-radius: var(--radius-full);
+      font-size: 0.925rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      transition: all var(--transition-normal);
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      z-index: 1;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold));
+      color: var(--text-dark);
+      box-shadow: 0 4px 18px rgba(212, 175, 55, 0.3);
+    }
+
+    .btn-gold::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      transition: var(--transition-slow);
+      z-index: -1;
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.45);
+    }
+
+    .btn-gold:hover::before {
+      left: 100%;
+    }
+
+    .btn-outline {
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+      background: rgba(212, 175, 55, 0.08);
+      transform: translateY(-2px);
+    }
+
+    /* Scroll Reveal Initial Animation Classes */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 1.25rem 0;
+      transition: all var(--transition-normal);
+    }
+
+    .navbar.scrolled {
+      padding: 0.85rem 0;
+      background: var(--bg-glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .logo-text {
+      font-family: var(--font-serif);
+      font-size: 2.1rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--text-main);
+      text-transform: uppercase;
+      background: linear-gradient(135deg, #ffffff 30%, var(--accent-gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .logo-sub {
+      font-size: 0.65rem;
+      letter-spacing: 0.35em;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      margin-top: 2px;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: rgba(244, 240, 235, 0.8);
+      position: relative;
+      padding: 0.4rem 0;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--accent-gold);
+      transition: var(--transition-normal);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--accent-gold);
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      width: 30px;
+      height: 22px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: var(--text-main);
+      border-radius: 2px;
+      transition: var(--transition-normal);
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+      background-color: var(--accent-gold);
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+      background-color: var(--accent-gold);
+    }
+
+    /* Mobile Overlay Menu */
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 85%;
+      max-width: 380px;
+      height: 100vh;
+      background: rgba(13, 15, 18, 0.98);
+      backdrop-filter: blur(20px);
+      z-index: 999;
+      padding: 6rem 2.5rem 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: right var(--transition-normal);
+      border-left: 1px solid var(--border-color);
+    }
+
+    .mobile-menu.active {
+      right: 0;
+    }
+
+    .mobile-nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .mobile-nav-link {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      color: var(--text-main);
+      display: block;
+    }
+
+    .mobile-nav-link:hover, .mobile-nav-link.active {
+      color: var(--accent-gold);
+    }
+
+    .menu-overlay-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(4px);
+      z-index: 998;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-normal);
+    }
+
+    .menu-overlay-bg.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8rem 0 5rem;
+      background: linear-gradient(to bottom, rgba(13,15,18,0.4) 0%, rgba(13,15,18,0.85) 80%, var(--bg-dark) 100%),
+                  url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+    }
+
+    .hero-content {
+      text-align: center;
+      max-width: 860px;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1.2rem;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-full);
+      color: var(--accent-gold);
+      font-size: 0.825rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(6px);
+    }
+
+    .hero-title {
+      font-size: clamp(2.8rem, 6.5vw, 5rem);
+      margin-bottom: 1.2rem;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      color: rgba(244, 240, 235, 0.85);
+      font-weight: 300;
+      margin-bottom: 2.5rem;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 4rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--border-light);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-stat-item h3 {
+      font-size: 2.2rem;
+      color: var(--accent-gold);
+      line-height: 1;
+    }
+
+    .hero-stat-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      z-index: 2;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); }
+      40% { transform: translate(-50%, -8px); }
+      60% { transform: translate(-50%, -4px); }
+    }
+
+    .about-section {
+      padding: 7rem 0;
+      position: relative;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-img-stack {
+      position: relative;
+    }
+
+    .about-img-main {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-md);
+    }
+
+    .about-img-main img {
+      width: 100%;
+      height: 520px;
+      transition: transform var(--transition-slow);
+    }
+
+    .about-img-stack:hover .about-img-main img {
+      transform: scale(1.03);
+    }
+
+    .about-img-sub {
+      position: absolute;
+      bottom: -2.5rem;
+      right: -2rem;
+      width: 55%;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 3px solid var(--bg-dark);
+      box-shadow: var(--shadow-md);
+    }
+
+    .about-badge-floating {
+      position: absolute;
+      top: -1.5rem;
+      left: -1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 1.2rem 1.6rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+
+    .about-badge-floating .rating {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      font-family: var(--font-serif);
+    }
+
+    .about-badge-floating .stars {
+      color: var(--accent-gold);
+      font-size: 0.8rem;
+      margin-top: 0.1rem;
+    }
+
+    .about-content p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+      font-weight: 300;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    .highlight-card {
+      background: var(--bg-card);
+      padding: 1rem 1.2rem;
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--accent-gold);
+    }
+
+    .highlight-card h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.2rem;
+      color: var(--text-main);
+    }
+
+    .highlight-card p {
+      font-size: 0.85rem;
+      margin-bottom: 0;
+      color: var(--text-muted);
+    }
+
+    .menu-section {
+      padding: 7rem 0;
+      background: #0a0c0e;
+      position: relative;
+    }
+
+    .menu-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .menu-categories {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 3.5rem;
+    }
+
+    .category-btn {
+      padding: 0.65rem 1.4rem;
+      border-radius: var(--radius-full);
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all var(--transition-fast);
+    }
+
+    .category-btn:hover, .category-btn.active {
+      background: var(--accent-gold);
+      color: var(--text-dark);
+      border-color: var(--accent-gold);
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2rem;
+    }
+
+    .menu-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: all var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-color);
+      box-shadow: var(--shadow-md);
+      background: var(--bg-card-hover);
+    }
+
+    .menu-card-img {
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .menu-card-img img {
+      width: 100%;
+      height: 100%;
+      transition: transform var(--transition-slow);
+    }
+
+    .menu-card:hover .menu-card-img img {
+      transform: scale(1.08);
+    }
+
+    .menu-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(13, 15, 18, 0.85);
+      border: 1px solid var(--border-color);
+      color: var(--accent-gold);
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      backdrop-filter: blur(8px);
+      font-weight: 600;
+    }
+
+    .menu-card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .menu-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.6rem;
+      gap: 1rem;
+    }
+
+    .menu-item-title {
+      font-size: 1.35rem;
+      color: var(--text-main);
+    }
+
+    .menu-item-price {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      white-space: nowrap;
+    }
+
+    .menu-item-desc {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+    }
+
+    .demo-notice {
+      text-align: center;
+      margin-top: 3rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+
+    .features-section {
+      padding: 6rem 0;
+      position: relative;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 2.5rem 2rem;
+      position: relative;
+      transition: all var(--transition-normal);
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+      opacity: 0;
+      transition: opacity var(--transition-normal);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-color);
+      box-shadow: var(--shadow-md);
+    }
+
+    .feature-card:hover::before {
+      opacity: 1;
+    }
+
+    .feature-num {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: rgba(212, 175, 55, 0.25);
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      line-height: 1;
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      color: var(--accent-gold);
+      margin-bottom: 1.2rem;
+    }
+
+    .feature-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .feature-desc {
+      color: var(--text-muted);
+      font-size: 0.925rem;
+      font-weight: 300;
+    }
+
+    .parallax-section {
+      position: relative;
+      padding: 10rem 0;
+      background: linear-gradient(rgba(13, 15, 18, 0.82), rgba(13, 15, 18, 0.85)),
+                  url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1920&auto=format&fit=crop') center/cover fixed no-repeat;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .parallax-content {
+      max-width: 800px;
+    }
+
+    .parallax-title {
+      font-size: clamp(2.5rem, 5vw, 4.2rem);
+      color: var(--text-main);
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .gallery-section {
+      padding: 7rem 0;
+      background: #0a0c0e;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      height: 280px;
+      cursor: pointer;
+      border: 1px solid var(--border-light);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      transition: transform var(--transition-slow);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(13, 15, 18, 0.7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity var(--transition-normal);
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .gallery-overlay i {
+      font-size: 2rem;
+      color: var(--accent-gold);
+      margin-bottom: 0.5rem;
+      transform: translateY(15px);
+      transition: transform var(--transition-normal);
+    }
+
+    .gallery-overlay span {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--text-main);
+      transform: translateY(15px);
+      transition: transform var(--transition-normal);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-item:hover .gallery-overlay i,
+    .gallery-item:hover .gallery-overlay span {
+      transform: translateY(0);
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.93);
+      backdrop-filter: blur(12px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-normal);
+    }
+
+    .lightbox-modal.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-content {
+      position: relative;
+      max-width: 90%;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 75vh;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .lightbox-caption {
+      margin-top: 1rem;
+      color: var(--accent-gold);
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+    }
+
+    .lightbox-close, .lightbox-prev, .lightbox-next {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--border-light);
+      color: var(--text-main);
+      width: 48px; height: 48px;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      transition: var(--transition-fast);
+      z-index: 2001;
+    }
+
+    .lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover {
+      background: var(--accent-gold);
+      color: var(--text-dark);
+    }
+
+    .lightbox-close { top: 2rem; right: 2rem; }
+    .lightbox-prev { left: 2rem; top: 50%; transform: translateY(-50%); }
+    .lightbox-next { right: 2rem; top: 50%; transform: translateY(-50%); }
+
+    .reviews-section {
+      padding: 7rem 0;
+      position: relative;
+    }
+
+    .reviews-header-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 2.5rem;
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto 4rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .rating-score {
+      font-family: var(--font-serif);
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      line-height: 1;
+    }
+
+    .rating-stars {
+      color: var(--accent-gold);
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-normal);
+    }
+
+    .review-card:hover {
+      border-color: var(--border-color);
+      transform: translateY(-4px);
+    }
+
+    .review-text {
+      color: rgba(244, 240, 235, 0.9);
+      font-size: 0.975rem;
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+    }
+
+    .reviewer-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .reviewer-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-full);
+      background: var(--accent-gold-glow);
+      border: 1px solid var(--accent-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-gold);
+      font-weight: 700;
+      font-family: var(--font-serif);
+    }
+
+    .reviewer-details h5 {
+      font-size: 1.05rem;
+      color: var(--text-main);
+    }
+
+    .reviewer-details p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .reservation-cta-section {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(13, 15, 18, 0.95) 100%);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .cta-box {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    /* Modal Form for Reservation */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(10px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-normal);
+      padding: 1.5rem;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .reservation-modal {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 580px;
+      position: relative;
+      box-shadow: var(--shadow-md);
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      color: var(--text-muted);
+      font-size: 1.4rem;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .modal-close:hover {
+      color: var(--accent-gold);
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--accent-gold);
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      background: rgba(13, 15, 18, 0.6);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      color: var(--text-main);
+      font-size: 0.95rem;
+      transition: var(--transition-fast);
+    }
+
+    .form-control:focus {
+      border-color: var(--accent-gold);
+      background: rgba(13, 15, 18, 0.9);
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .contact-section {
+      padding: 7rem 0;
+      position: relative;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .info-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .info-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: var(--radius-full);
+      background: var(--accent-gold-glow);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-gold);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .info-text h4 {
+      font-size: 1.15rem;
+      color: var(--text-main);
+      margin-bottom: 0.3rem;
+    }
+
+    .info-text p, .info-text a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 300;
+    }
+
+    .info-text a:hover {
+      color: var(--accent-gold);
+    }
+
+    .map-container {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      height: 100%;
+      min-height: 380px;
+      position: relative;
+      background: var(--bg-card);
+    }
+
+    .map-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+      background: linear-gradient(rgba(22, 26, 32, 0.9), rgba(22, 26, 32, 0.9)),
+                  url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=800&auto=format&fit=crop') center/cover;
+    }
+
+    .footer {
+      background: #08090b;
+      border-top: 1px solid var(--border-light);
+      padding: 5rem 0 2rem;
+      position: relative;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    .footer-about p {
+      color: var(--text-muted);
+      font-size: 0.925rem;
+      margin-top: 1rem;
+      font-weight: 300;
+      max-width: 320px;
+    }
+
+    .footer-title {
+      font-size: 1.2rem;
+      color: var(--text-main);
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .footer-title::after {
+      content: '';
+      position: absolute;
+      bottom: -6px; left: 0;
+      width: 30px; height: 2px;
+      background: var(--accent-gold);
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-gold);
+      padding-left: 4px;
+    }
+
+    .footer-bottom {
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 48px;
+      height: 48px;
+      background: var(--accent-gold);
+      color: var(--text-dark);
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      pointer-events: none;
+      transition: all var(--transition-normal);
+      z-index: 990;
+    }
+
+    .back-to-top.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    @media (max-width: 1024px) {
+      .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-actions .btn {
+        display: none;
+      }
+      .hamburger {
+        display: flex;
+      }
+      .hero-stats-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .about-img-sub {
+        width: 65%;
+        right: -0.5rem;
+        bottom: -1.5rem;
+      }
+      .about-badge-floating {
+        left: 0rem;
+        top: -1rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .lightbox-prev { left: 0.5rem; }
+      .lightbox-next { right: 0.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-text">KAFFA</span>
+        <span class="logo-sub">CAFE & RESTAURANT</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-gold modal-trigger">
+          <i class="fa-regular class fa-calendar-check"></i> Reserve a Table
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="menu-overlay-bg" id="menuOverlayBg"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div>
+      <div class="nav-logo" style="margin-bottom: 2.5rem;">
+        <span class="logo-text">KAFFA</span>
+        <span class="logo-sub">LAKE CITY • LAHORE</span>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#reviews" class="mobile-nav-link">Reviews</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <button class="btn btn-gold modal-trigger" style="width: 100%; margin-bottom: 1.5rem;">
+        Reserve a Table
+      </button>
+      <div style="color: var(--text-muted); font-size: 0.85rem; text-align: center;">
+        <i class="fa-solid fa-phone" style="color: var(--accent-gold);"></i> +92 311 1777505
+      </div>
+    </div>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-badge reveal">
+        <i class="fa-solid fa-location-dot"></i> Lake City • Lahore
+      </div>
+      <h1 class="hero-title reveal">Where Every Moment Tastes Better.</h1>
+      <p class="hero-subtitle reveal">
+        Good food, great coffee, and unforgettable moments at KAFFA, Lake City Lahore.
+      </p>
+      <div class="hero-buttons reveal">
+        <a href="#menu" class="btn btn-gold"><i class="fa-solid fa-utensils"></i> Explore Menu</a>
+        <button class="btn btn-outline modal-trigger"><i class="fa-regular fa-calendar-check"></i> Reserve a Table</button>
+      </div>
+
+      <div class="hero-stats-row reveal">
+        <div class="hero-stat-item">
+          <h3>4.7 ★</h3>
+          <p>Google Rating</p>
+        </div>
+        <div class="hero-stat-item">
+          <h3>8 AM – 12:30 AM</h3>
+          <p>Open Daily</p>
+        </div>
+        <div class="hero-stat-item">
+          <h3>Lake City</h3>
+          <p>Lahore, Pakistan</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-stack reveal">
+          <div class="about-badge-floating">
+            <div class="rating">4.7★</div>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">300+ Reviews</span>
+          </div>
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=800&auto=format&fit=crop" alt="KAFFA Cafe Ambience">
+          </div>
+          <div class="about-img-sub">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=600&auto=format&fit=crop" alt="Specialty Handcrafted Coffee">
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="section-subtitle">THE KAFFA EXPERIENCE</span>
+          <h2 class="section-title">More Than Just a Cafe</h2>
+          <p>
+            Nestled in the heart of Lake City Lahore, KAFFA brings together culinary excellence, artisanal specialty coffee, and an atmosphere designed for creating lasting memories.
+          </p>
+          <p>
+            Whether you are starting your morning with our handcrafted breakfast, hosting a leisurely lunch, or enjoying late-night coffee dates with loved ones, KAFFA delivers standard-setting dining experiences defined by warmth and sophistication.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <h4>Artisanal Coffee</h4>
+              <p>Ethically sourced premium beans roasted to perfection.</p>
+            </div>
+            <div class="highlight-card">
+              <h4>Gourmet Cuisine</h4>
+              <p>Fresh continental dishes prepared with passion.</p>
+            </div>
+            <div class="highlight-card">
+              <h4>Chic Ambience</h4>
+              <p>Luxurious modern aesthetics designed for comfort.</p>
+            </div>
+            <div class="highlight-card">
+              <h4>Prime Location</h4>
+              <p>Conveniently located at Lake City Road, Lahore.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="menu-header reveal">
+        <span class="section-subtitle">OUR SIGNATURE MENU</span>
+        <h2 class="section-title">Made with quality ingredients. Served with passion.</h2>
+        <p class="section-desc">Explore our carefully curated selection of handcrafted coffee, gourmet burgers, juicy steaks, authentic pasta, and decadent desserts.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="menu-categories reveal">
+        <button class="category-btn active" data-filter="all">All Items</button>
+        <button class="category-btn" data-filter="breakfast">Breakfast</button>
+        <button class="category-btn" data-filter="burgers">Burgers</button>
+        <button class="category-btn" data-filter="steaks">Steaks</button>
+        <button class="category-btn" data-filter="pasta">Pasta</button>
+        <button class="category-btn" data-filter="desserts">Desserts</button>
+        <button class="category-btn" data-filter="coffee">Coffee</button>
+        <button class="category-btn" data-filter="beverages">Beverages</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menuGrid">
+        
+        <!-- Item 1 -->
+        <div class="menu-card reveal" data-category="burgers">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=600&auto=format&fit=crop" alt="KAFFA Signature Burger">
+            <span class="menu-badge">Burgers</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-item-title">KAFFA Signature Burger</h3>
+              <span class="menu-item-price">PKR 1,450</span>
+            </div>
+            <p class="menu-item-desc">Prime double smashed beef patty, caramelized onions, melted cheddar, signature sauce in a toasted brioche bun.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="menu-card reveal" data-category="steaks">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop" alt="Grilled Ribeye Steak">
+            <span class="menu-badge">Steaks</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-item-title">Ribeye Grilled Steak</h3>
+              <span class="menu-item-price">PKR 2,850</span>
+            </div>
+            <p class="menu-item-desc">Tender prime cut beef steak served with mushroom pepper sauce, mashed potatoes, and charred garden vegetables.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="menu-card reveal" data-category="pasta">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?q=80&w=600&auto=format&fit=crop" alt="Creamy Alfredo Pasta">
+            <span class="menu-badge">Pasta</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-item-title">Creamy Fettuccine Alfredo</h3>
+              <span class="menu-item-price">PKR 1,650</span>
+            </div>
+            <p class="menu-item-desc">Fettuccine tossed in rich parmesan cream sauce with grilled chicken strips and fresh parsley.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="menu-card reveal" data-category="breakfast">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1484723091479-00159707a45c?q=80&w=600&auto=format&fit=crop" alt="Artisanal French Toast">
+            <span class="menu-badge">Breakfast</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-item-title">Artisanal French Toast</h3>
+              <span class="menu-item-price">PKR 1,150</span>
+            </div>
+            <p class="menu-item-desc">Brioche bread coated in cinnamon custard, topped with wild berries, whipped butter, and pure maple syrup.</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=600&auto=format&fit=crop" alt="Spanish Latte">
+            <span class="menu-badge">Coffee</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-item-title">KAFFA Spanish Latte</h3>
+              <span class="menu-item-price">PKR 780</span>
+            </div>
+            <p class="menu-item-desc">Rich double shot espresso combined with condensed milk and silky textured steamed milk.</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="menu-card reveal" data-category="desserts">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=600&auto=format&fit=crop" alt="Lotus Biscoff Cheesecake">
+            <span class="menu-badge">Desserts</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-item-title">Lotus Biscoff Cheesecake</h3>
+              <span class="menu-item-price">PKR 920</span>
+            </div>
+            <p class="menu-item-desc">Creamy baked New York cheesecake topped with warm Lotus spread and crunchy Biscoff crumbles.</p>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=600&auto=format&fit=crop" alt="Artisan Cappuccino">
+            <span class="menu-badge">Coffee</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-item-title">Artisan Cappuccino</h3>
+              <span class="menu-item-price">PKR 650</span>
+            </div>
+            <p class="menu-item-desc">Perfect ratio of dark roast espresso, velvety steamed milk, and dense microfoam with latte art.</p>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="menu-card reveal" data-category="steaks">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?q=80&w=600&auto=format&fit=crop" alt="Mushroom Chicken Steak">
+            <span class="menu-badge">Steaks</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-item-title">Mushroom Chicken Steak</h3>
+              <span class="menu-item-price">PKR 1,890</span>
+            </div>
+            <p class="menu-item-desc">Flame-grilled juicy chicken fillet smothered in creamy wild mushroom sauce with steak fries.</p>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="menu-card reveal" data-category="beverages">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=600&auto=format&fit=crop" alt="Berry Sparkler Mocktail">
+            <span class="menu-badge">Beverages</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-item-title">Berry Sparkler Mocktail</h3>
+              <span class="menu-item-price">PKR 680</span>
+            </div>
+            <p class="menu-item-desc">Muddled wild berries, fresh mint leaves, lime juice, and sparkling soda served ice-cold.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="demo-notice">* Prices shown above are sample menu listings. Please verify current prices at the venue.</p>
+
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <button class="btn btn-gold modal-trigger">
+          <i class="fa-regular fa-calendar-check"></i> Reserve a Table For Full Dining
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <div class="container">
+      <div class="features-grid">
+        
+        <div class="feature-card reveal">
+          <span class="feature-num">01</span>
+          <div class="feature-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h3 class="feature-title">Fresh Ingredients</h3>
+          <p class="feature-desc">We source only premium, handpicked fresh ingredients to craft every single meal with uncompromised quality.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <span class="feature-num">02</span>
+          <div class="feature-icon"><i class="fa-solid fa-mug-hot"></i></div>
+          <h3 class="feature-title">Specialty Coffee</h3>
+          <p class="feature-desc">Our expert baristas brew single-origin beans to extract rich aromas and velvety smoothness in every cup.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <span class="feature-num">03</span>
+          <div class="feature-icon"><i class="fa-solid fa-crown"></i></div>
+          <h3 class="feature-title">Premium Dining</h3>
+          <p class="feature-desc">From our refined plating to attentive hospitality, we turn every meal into a high-end dining occasion.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <span class="feature-num">04</span>
+          <div class="feature-icon"><i class="fa-solid fa-couch"></i></div>
+          <h3 class="feature-title">Perfect Ambience</h3>
+          <p class="feature-desc">Immerse yourself in our thoughtfully lit, sophisticated space designed for both work and social gatherings.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="parallax-section" id="experience">
+    <div class="container parallax-content reveal">
+      <span class="section-subtitle" style="color: var(--accent-gold-light);">EXPERIENCE LAHORE'S FINEST</span>
+      <h2 class="parallax-title">"Good Food. Great Coffee. Better Memories."</h2>
+      <p style="color: rgba(244, 240, 235, 0.85); font-size: 1.15rem; margin-bottom: 2.5rem; font-weight: 300;">
+        Immerse yourself in Lake City’s premier destination for coffee connoisseurs and food lovers alike.
+      </p>
+      <button class="btn btn-gold modal-trigger">
+        <i class="fa-regular fa-compass"></i> Discover KAFFA
+      </button>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="menu-header reveal">
+        <span class="section-subtitle">VISUAL GALLERY</span>
+        <h2 class="section-title">A Glimpse into KAFFA</h2>
+        <p class="section-desc">Take a look at our artisanal dishes, coffee crafts, and welcoming interior atmosphere.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200&auto=format&fit=crop" data-caption="Chic Coffee Lounge Ambience">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=600&auto=format&fit=crop" alt="Cafe Interior">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Cafe Ambience</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop" data-caption="KAFFA Gourmet Gourmet Burger">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=600&auto=format&fit=crop" alt="Gourmet Burger">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Gourmet Burgers</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" data-caption="Prime Grilled Ribeye Steak">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop" alt="Ribeye Steak">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Sizzling Steaks</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=1200&auto=format&fit=crop" data-caption="Artisanal Espresso & Latte Art">
+          <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=600&auto=format&fit=crop" alt="Espresso Latte Art">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Specialty Brews</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=1200&auto=format&fit=crop" data-caption="Decadent Lotus Biscoff Cheesecake">
+          <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=600&auto=format&fit=crop" alt="Lotus Cheesecake">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Handcrafted Desserts</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200&auto=format&fit=crop" data-caption="Evening Dining Atmosphere at KAFFA">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=600&auto=format&fit=crop" alt="Night Atmosphere">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Evening Atmosphere</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal DOM -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-prev" id="lightboxPrev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lightbox-next" id="lightboxNext"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="menu-header reveal">
+        <span class="section-subtitle">GUEST EXPERIENCES</span>
+        <h2 class="section-title">Loved by Food & Coffee Enthusiasts</h2>
+      </div>
+
+      <div class="reviews-header-card reveal">
+        <div class="rating-score">4.7 / 5</div>
+        <div class="rating-stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Based on Google Reviews (Sample Highlights)</p>
+      </div>
+
+      <div class="reviews-grid">
+        
+        <div class="review-card reveal">
+          <p class="review-text">"KAFFA is hands down the best cafe experience in Lake City Lahore. Their Spanish Latte is unbelievably good, and the signature burger was grilled to perfection!"</p>
+          <div classreviewer-info">
+            <div class="reviewer-avatar">AH</div>
+            <div class="reviewer-details">
+              <h5>Ali Hassan</h5>
+              <p>Verified Guest • 5 Stars</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <p class="review-text">"A hidden gem in Lake City! The ambiance is super cozy and high-end. The steak was tender and full of flavor. Great place to catch up with friends."</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">FK</div>
+            <div class="reviewer-details">
+              <h5>Fatima Khan</h5>
+              <p>Verified Guest • 5 Stars</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <p class="review-text">"Top-notch coffee quality! You can tell they use premium coffee beans. The Lotus cheesecake was rich and melted in my mouth. Will definitely be visiting regularly!"</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">UR</div>
+            <div class="reviewer-details">
+              <h5>Usman Raza</h5>
+              <p>Verified Guest • 5 Stars</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="reservation-cta-section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <span class="section-subtitle">RESERVE YOUR EXPERIENCE</span>
+        <h2 class="section-title">Your Table Is Waiting.</h2>
+        <p class="section-desc">Planning a breakfast meeting, coffee date, evening dinner, or special family celebration? Reserve your table at KAFFA today.</p>
+        
+        <div class="cta-buttons">
+          <a href="tel:+923111777505" class="btn btn-gold">
+            <i class="fa-solid fa-phone"></i> Call KAFFA (+92 311 1777505)
+          </a>
+          <a href="https://maps.google.com/?q=KAFFA+Lake+City+Lahore" target="_blank" rel="noopener" class="btn btn-outline">
+            <i class="fa-solid fa-location-arrow"></i> Get Directions
+          </a>
+          <button class="btn btn-outline modal-trigger">
+            <i class="fa-regular fa-calendar-days"></i> Book Online
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Table Reservation Modal -->
+  <div class="modal-overlay" id="reservationModal">
+    <div class="reservation-modal">
+      <span class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></span>
+      <span class="section-subtitle">TABLE BOOKING</span>
+      <h3 class="font-serif" style="font-size: 1.8rem; margin-bottom: 1.5rem;">Reserve a Table at KAFFA</h3>
+      
+      <form id="reservationForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-control" required id="resDate">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Time</label>
+            <select class="form-control" required id="resTime">
+              <option value="">Select Time</option>
+              <option value="09:00 AM">09:00 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="03:00 PM">03:00 PM</option>
+              <option value="06:00 PM">06:00 PM</option>
+              <option value="08:00 PM">08:00 PM</option>
+              <option value="10:00 PM">10:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Party Size</label>
+            <select class="form-control" required id="resGuests">
+              <option value="2 Guests">2 Guests</option>
+              <option value="4 Guests">4 Guests</option>
+              <option value="6 Guests">6 Guests</option>
+              <option value="8+ Guests">8+ Guests (Party/Event)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Your Name" required id="resName">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" placeholder="+92 311 1777505" required id="resPhone">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Special Requests / Occasion</label>
+          <textarea class="form-control" rows="2" placeholder="Birthday, anniversary, indoor/outdoor seating preference..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 1rem;">
+          Confirm Reservation
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="menu-header reveal">
+        <span class="section-subtitle">VISIT & CONTACT</span>
+        <h2 class="section-title">Where to Find Us</h2>
+        <p class="section-desc">We are located at Lake City Road, Lahore. Drop by or reach out for inquiries.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="info-card">
+            
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-text">
+                <h4>Our Location</h4>
+                <p>C-43, 22 Lake City Road, Block M 3-A, Lake City, Lahore, Pakistan</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="info-text">
+                <h4>Phone & WhatsApp</h4>
+                <p><a href="tel:+923111777505">+92 311 1777505</a> / 0311 1777505</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="info-text">
+                <h4>Opening Hours</h4>
+                <p>Every Day: 8:00 AM – 12:30 AM</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-brands fa-instagram"></i></div>
+              <div class="info-text">
+                <h4>Instagram</h4>
+                <p><a href="https://instagram.com/kaffa.pakistan" target="_blank" rel="noopener">@kaffa.pakistan</a></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Styled Location Map Placeholder / Action Frame -->
+        <div class="reveal">
+          <div class="map-container">
+            <div class="map-placeholder">
+              <i class="fa-solid fa-map-location-dot" style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 1rem;"></i>
+              <h3 class="font-serif" style="font-size: 1.8rem; margin-bottom: 0.5rem;">KAFFA Lake City Lahore</h3>
+              <p style="color: var(--text-muted); margin-bottom: 1.5rem; max-width: 320px;">
+                C-43, 22 Lake City Road, Block M 3-A, Lake City, Lahore
+              </p>
+              <a href="https://maps.google.com/?q=C-43+22+Lake+City+Road+Lahore" target="_blank" rel="noopener" class="btn btn-gold">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-about">
+          <a href="#home" class="nav-logo">
+            <span class="logo-text">KAFFA</span>
+            <span class="logo-sub">CAFE & RESTAURANT</span>
+          </a>
+          <p>Where every moment tastes better. Exceptional handcrafted coffee, gourmet continental dining, and unforgettable hospitality in Lake City Lahore.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About KAFFA</a></li>
+            <li><a href="#menu">Signature Menu</a></li>
+            <li><a href="#gallery">Visual Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Opening Hours</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Monday – Sunday</p>
+          <p style="color: var(--accent-gold); font-size: 1rem; font-weight: 600;">8:00 AM – 12:30 AM</p>
+          <p style="color: var(--text-muted); font-size: 0.825rem; margin-top: 0.5rem;">Breakfast, Lunch, Dinner & Late Night Coffee</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact Info</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">C-43, 22 Lake City Road, Block M 3-A, Lake City, Lahore</p>
+          <p style="color: var(--text-main); font-size: 0.9rem;"><i class="fa-solid fa-phone" style="color: var(--accent-gold);"></i> +92 311 1777505</p>
+          <div style="margin-top: 1rem;">
+            <a href="https://instagram.com/kaffa.pakistan" target="_blank" rel="noopener" style="color: var(--accent-gold); font-size: 1.5rem;">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 KAFFA. All Rights Reserved. Crafted for Lake City Lahore.</p>
+        <p>Designed with elegance and passion.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      // 1. Sticky Navigation Observer
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // 2. Mobile Hamburger Menu Toggle
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuOverlayBg = document.getElementById('menuOverlayBg');
+
+      function toggleMobileMenu() {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        menuOverlayBg.classList.toggle('active');
+        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+      }
+
+      hamburger.addEventListener('click', toggleMobileMenu);
+      menuOverlayBg.addEventListener('click', toggleMobileMenu);
+
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          if (mobileMenu.classList.contains('active')) {
+            toggleMobileMenu();
+          }
+        });
+      });
+
+      // 3. Scroll Reveal Animation (Intersection Observer)
+      const revealElements = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+
+      // 4. Category Filtering for Signature Menu
+      const categoryBtns = document.querySelectorAll('.category-btn');
+      const menuCards = document.querySelectorAll('.menu-card');
+
+      categoryBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          categoryBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          menuCards.forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+              card.style.display = 'flex';
+              setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; }, 50);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'translateY(20px)';
+              setTimeout(() => { card.style.display = 'none'; }, 300);
+            }
+          });
+        });
+      });
+
+      // 5. Gallery Lightbox Logic
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const lightboxClose = document.getElementById('lightboxClose');
+      const lightboxPrev = document.getElementById('lightboxPrev');
+      const lightboxNext = document.getElementById('lightboxNext');
+
+      let currentGalleryIndex = 0;
+      const galleryData = Array.from(galleryItems).map(item => ({
+        src: item.getAttribute('data-src'),
+        caption: item.getAttribute('data-caption')
+      }));
+
+      function openLightbox(index) {
+        currentGalleryIndex = index;
+        lightboxImg.src = galleryData[index].src;
+        lightboxCaption.textContent = galleryData[index].caption;
+        lightboxModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightboxModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      function nextLightbox() {
+        currentGalleryIndex = (currentGalleryIndex + 1) % galleryData.length;
+        openLightbox(currentGalleryIndex);
+      }
+
+      function prevLightbox() {
+        currentGalleryIndex = (currentGalleryIndex - 1 + galleryData.length) % galleryData.length;
+        openLightbox(currentGalleryIndex);
+      }
+
+      galleryItems.forEach((item, index) => {
+        item.addEventListener('click', () => openLightbox(index));
+      });
+
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightboxNext.addEventListener('click', nextLightbox);
+      lightboxPrev.addEventListener('click', prevLightbox);
+
+      // Lightbox Keyboard Navigation
+      document.addEventListener('keydown', (e) => {
+        if (!lightboxModal.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') nextLightbox();
+        if (e.key === 'ArrowLeft') prevLightbox();
+      });
+
+      // 6. Reservation Modal Trigger & Logic
+      const modalTriggers = document.querySelectorAll('.modal-trigger');
+      const reservationModal = document.getElementById('reservationModal');
+      const modalClose = document.getElementById('modalClose');
+      const reservationForm = document.getElementById('reservationForm');
+
+      modalTriggers.forEach(btn => {
+        btn.addEventListener('click', () => {
+          reservationModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      modalClose.addEventListener('click', () => {
+        reservationModal.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+
+      reservationModal.addEventListener('click', (e) => {
+        if (e.target === reservationModal) {
+          reservationModal.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+
+      reservationForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('resName').value;
+        const date = document.getElementById('resDate').value;
+        const time = document.getElementById('resTime').value;
+
+        // Custom Notification Banner
+        alert(`Thank you, ${name}! Your table reservation request for ${date} at ${time} has been received. Our team at KAFFA Lake City will contact you shortly to confirm.`);
+        
+        reservationForm.reset();
+        reservationModal.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+
+      // 7. Back To Top Button
+      const backToTopBtn = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+          backToTopBtn.classList.add('active');
+        } else {
+          backToTopBtn.classList.remove('active');
+        }
+      });
+
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // 8. Active Nav Link Scroll Highlight
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (scrollY >= (sectionTop - 200)) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+    });
+  </script>
+</body>
+</html>
